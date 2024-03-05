@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(22, 20, 20);
+    font-family: 'Inter';
+}
+
+.main-container {
+    position: relative;
+    margin: 5px auto 0 auto;
+    padding: 32px 28px 32px 28px ;
+    width: 499px;
+    max-width: 100%;
+    height: 700px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+img {
+    background-color:#F1F3F5;
+    width: 450px;
+    height: 350px;
+    border-radius: 8px;
+    /* position: relative; */
+}
+
+.etiqueta {
+    color: white;
+    background-color: #364FC7;
+    position: absolute;
+    top: 45px;
+    left: 40px;
+    width: 60px;
+    padding: 4px 12px 4px 12px;
+    border-radius: 4px;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.product-title {
+    margin-top: 2vh;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.product-colors {
+    display: flex;
+    gap: 10px;
+}
+
+.product-colors p, .product-sizes, .product-price {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#colors {
+  width: 28px;
+  height: 28px;
+  border: 2px solid black;
+  border-radius: 50%;  
+}
+
+.black {
+    background-color: black;
+}
+
+.green {
+    background-color: #0B7285;
+}
+
+.blue {
+    background-color: #364FC7;
+}
+
+.product-sizes {
+    display: flex;
+    gap: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+li {
+    background-color:#F1F3F5;
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px;
+    height: 30px;;
+}
+
+.product-price {
+    display: flex;
+    gap: 20px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #ADB5BD;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 17px;
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 14px 33px 14px 33px ;
+    height: 47px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.more-details {
+    background-color: white;
+}
+
+.add-cart {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 400px) {
+    .main-container {
+        margin:10px 1px 10px 1px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width:350px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
